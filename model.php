@@ -7,7 +7,7 @@ function model($name){
     if(file_exists($filename)){
         return require_once($filename);
     }else{
-        die('model '.$name.' not found');
+        die('model <b>'.$name.'</b> not found');
     }
 }
 
