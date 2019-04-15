@@ -3,11 +3,11 @@
 //20 de Dezembro de 2018
 
 function model($name){
-    $str=ROOT.'app/model/'.$name.'.php';
-    if(file_exists($str)){
-        return require_once($str);
+    $filename=ROOT.'app/model/'.$name.'.php';
+    if(file_exists($filename)){
+        return require_once($filename);
     }else{
-        return false;
+        die('model '.$name.' not found');
     }
 }
 
